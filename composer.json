@@ -17,7 +17,9 @@
     "homepage" : "https://github.com/KianWilliam/ZF3KbCart",
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.6"
+        "php": ">=5.6",
+	"zend-config":"",
+	    "zend-crypt":""
     },
     "autoload" : {
         "psr-4": {
