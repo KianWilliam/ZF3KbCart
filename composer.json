@@ -1,0 +1,30 @@
+{
+    "name": "kbcart/zf3-kbcart",
+    "description": "Practical Simple ZF3 Shopping Cart",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kian William Nowrouzian",
+            "email": "mezmer121@gmail.com",
+			"homepage":"http://www.extensions.lord121.ir",
+			"role":"developer"
+        }
+    ],
+    "keywords" : [
+        "shopping-cart",
+        "zf3"
+    ],
+    "homepage" : "https://github.com/KianWilliam/ZF3KbCart",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload" : {
+        "psr-4": {
+         "kbcart\\": "src/"
+       }
+    },
+	 "autoload-dev": {
+        "psr-4": {"kbcart\\": "src/"}
+    }
+}
