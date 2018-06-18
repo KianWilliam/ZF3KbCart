@@ -2,6 +2,7 @@
     "name": "kbcart/zf3-kbcart",
     "description": "Practical Simple ZF3 Shopping Cart",
     "license": "MIT",
+	"version":"1.0.0",
     "authors": [
         {
             "name": "Kian William Nowrouzian",
