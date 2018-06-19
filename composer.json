@@ -13,7 +13,8 @@
     "keywords" : [
         "shopping-cart",
         "zf3",
-	    "store cart"
+	    "store cart",
+	    "cart"
     ],
     "homepage" : "https://github.com/KianWilliam/ZF3KbCart",
     "minimum-stability": "dev",
