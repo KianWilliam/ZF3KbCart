@@ -96,7 +96,7 @@ Update
 In cart view template page, when you assign the session array to the form(s) route there, token will be assigned 
 as a param or query and could be obtained from route.
 $token : '4b848870240fd2e976ee59831b34314f7cfbb05b';
-$this->kbcart()->update($token);
+$this->kbcart()->update($token, $amount);
 ```
 
 Destroy
