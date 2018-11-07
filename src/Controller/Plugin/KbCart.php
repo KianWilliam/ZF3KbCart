@@ -41,7 +41,7 @@ class KbCart extends AbstractPlugin
 				 
 					  $token = $this->generateToken($item);
 					  foreach($item as $key=>$value)
-							 $itemTotalPrice = $item[$key]['price']*intval($item[$key]['quantity']);	
+							 $itemTotalPrice = floatval($item[$key]['price'])*intval($item[$key]['quantity']);	
 						 
 						 $item[$key]['itemtotalprice'] = $itemTotalPrice;
 						 
@@ -61,7 +61,7 @@ class KbCart extends AbstractPlugin
 		//	echo $item[$cat[0]]['quantity'];
 			if(intval($item[$cat[0]]['quantity'])!== intval($quantity))
 			{
-				$this->session['cart'][$token][$cat[0]]['itemtotalprice']=$item[$cat[0]]['price']*intval($quantity);
+				$this->session['cart'][$token][$cat[0]]['itemtotalprice']=floatval($item[$cat[0]]['price'])*intval($quantity);
 				$this->session['cart'][$token][$cat[0]]['quantity']=intval($quantity);
 
 				$this->cartTotalPrice();
@@ -111,7 +111,7 @@ class KbCart extends AbstractPlugin
 
 						 if(!empty($this->config['vat']))
 						 {
-							  $vat = ($this->cartval/100)*$this->config['vat'];
+							  $vat = ($this->cartval/100)*floatval($this->config['vat']);
 							  $this->cartval += $vat;
 						 }
 			   
